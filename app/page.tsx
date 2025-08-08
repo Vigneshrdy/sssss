@@ -9,7 +9,6 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
-import { NavBar } from "@/components/ui/tubelight-navbar";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -62,15 +61,6 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   }
 );
 Button.displayName = "Button";
-
-// Navigation items for the tubelight navbar
-const navItems = [
-  { name: 'Home', url: 'hero', icon: Home },
-  { name: 'Collections', url: 'collections', icon: Gem },
-  { name: 'Rings', url: 'rings', icon: Crown },
-  { name: 'Necklaces', url: 'necklaces', icon: Sparkles },
-  { name: 'About', url: 'about', icon: User },
-];
 
 // Header Component with logo
 function Header() {
@@ -473,7 +463,6 @@ export default function SolveaApp() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <NavBar items={navItems} />
       <Hero />
       <CollectionsSection />
       <RingsSection />
