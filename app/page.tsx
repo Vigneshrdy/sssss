@@ -9,7 +9,6 @@ import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
-import { ThreeDPhotoCarousel } from "@/components/ui/3d-carousel";
 import { NavBar } from "@/components/ui/tubelight-navbar";
 import Image from "next/image";
 import Link from "next/link";
@@ -203,7 +202,6 @@ function CollectionsSection() {
             Explore our curated collections, each telling a unique story of craftsmanship and elegance
           </p>
         </div>
-        <ThreeDPhotoCarousel items={collectionItems} />
       </div>
     </section>
   );
@@ -229,7 +227,6 @@ function RingsSection() {
             From engagement rings to everyday elegance, discover rings that capture your unique style
           </p>
         </div>
-        <ThreeDPhotoCarousel items={ringItems} />
       </div>
     </section>
   );
@@ -255,7 +252,6 @@ function NecklacesSection() {
             Graceful necklaces that frame your beauty and complement every neckline with timeless elegance
           </p>
         </div>
-        <ThreeDPhotoCarousel items={necklaceItems} />
       </div>
     </section>
   );
@@ -281,7 +277,6 @@ function EarringsSection() {
             From subtle studs to statement pieces, find earrings that perfectly frame your face
           </p>
         </div>
-        <ThreeDPhotoCarousel items={earringItems} />
       </div>
     </section>
   );
